@@ -1,0 +1,33 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+  }
+  .main {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 350px;
+  }
+  .stats {
+    color: gray;
+  }
+  .author {
+    color: rgb(0, 4, 4);
+  }
+  .apple {
+    height: 50px;
+    width: 50px;
+  }
+  .shop {
+    background-color: rgb(223, 18, 127);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 50px;
+    width: 400px;
+  }
+  .text{
+    text-decoration: underline;
+    cursor: pointer;
+  }
