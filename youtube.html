@@ -3,23 +3,48 @@
   <head>
     <title>Youtube</title>
     <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       .img1 {
         display: block;
         width: 300px;
       }
       .search {
-        display: block;
+        display: inline-block;
         font-size: 20px;
         margin-left: 12px;
       }
+      .search,
+      .youtubeicon {
+        vertical-align: top;
+        vertical-align: middle;
+      }
+      .searchbox {
+        display: block;
+        text-align: center;
+        margin-left: 500px;
+        margin-bottom: 50px;
+      }
       .videotitle {
-        width: 300px;
+        font-weight: 500;
+        font-size: 14px;
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        vertical-align: top;
       }
       .channelname {
+        font-size: small;
+        color: rgb(120, 119, 119);
         width: 50px;
+        margin-top: 0;
       }
       .views {
+        font-size: small;
         width: 200px;
+        color: rgb(120, 119, 119);
       }
       .videocontainer1,
       .videocontainer2 {
@@ -30,23 +55,70 @@
         vertical-align: top;
         margin-right: 15px;
       }
+      .channelimage1 {
+        border-radius: 70px;
+        block-size: 40px;
+      }
+      .channelicon,
+      .channeldescription {
+        display: inline-block;
+      }
+      .channelicon {
+        vertical-align: top;
+        padding-top: 10px;
+        width: 50px;
+      }
+      .channeldescription {
+        vertical-align: top;
+        width: 200px;
+      }
+      .youtubeicon {
+        size: 50px;
+        display: inline-block;
+        width: 50px;
+      }
+      .searchIcon {
+        vertical-align: middle;
+      }
     </style>
   </head>
   <body>
-    <input class="search" type="text" placeholder="Search" />
+    <div class="searchbox">
+      <img src="./channelIcons/youtubeicon.png" class="youtubeicon" />
+      <input class="search" type="text" placeholder="Search" size="50" />
+      <button class="searchIcon">
+        <img src="./searchIcon.png" width="20 px" height="18px" />
+      </button>
+    </div>
     <div class="videocontainer1">
-      <img src="./thumbnails/youtubeThumbnail.webp" class="img1" />
-      <p class="videotitle">What Professional Software Engineers ACTUALLY Do</p>
-      <p class="channelname">ForrestKnight</p>
-      <p class="views">1.1M views &#183; 1 year ago</p>
+      <div>
+        <img src="./thumbnails/youtubeThumbnail.webp" class="img1" />
+      </div>
+      <div class="channelicon">
+        <img src="./channelIcons/channel1icon.jpeg" class="channelimage1" />
+      </div>
+      <div class="channeldescription">
+        <p class="videotitle">
+          What Professional Software Engineers ACTUALLY Do
+        </p>
+        <p class="channelname">ForrestKnight</p>
+        <p class="views">1.1M views &#183; 1 year ago</p>
+      </div>
     </div>
     <div class="videocontainer2">
-      <img src="./thumbnails/thumbnail2.webp" class="img1" />
-      <p class="videotitle">
-        Henry Cavill being a GAMER for 6 min and 14 sec (part 1)
-      </p>
-      <p class="channelname">tossacointogeralt</p>
-      <p class="views">10M views &#183; 2 years ago</p>
+      <div>
+        <img src="./thumbnails/thumbnail2.webp" class="img1" />
+      </div>
+      <div class="channelicon">
+        <img src="./channelIcons/channel2icon.jpeg" class="channelimage1" />
+      </div>
+      <div class="channeldescription">
+        <p class="videotitle">
+          Henry Cavill being a GAMER for 6 min and 14 sec (part 1)
+        </p>
+        <p class="channelname">tossacointogeralt</p>
+        <p class="views">10M views &#183; 2 years ago</p>
+      </div>
     </div>
   </body>
 </html>
